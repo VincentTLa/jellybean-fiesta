@@ -4,7 +4,7 @@ import { useMemo } from 'react';
 import { BlurFilter, TextStyle } from 'pixi.js';
 import { Stage, Container, Sprite, Text } from '@pixi/react';
 
-const App = () => {
+export default function App() {
   const blurFilter = useMemo(() => new BlurFilter(2), []);
   const bunnyUrl = 'https://pixijs.io/pixi-react/img/bunny.png';
   return (
@@ -54,6 +54,4 @@ const App = () => {
       </Container>
     </Stage>
   );
-};
-
-export default App;
+}
